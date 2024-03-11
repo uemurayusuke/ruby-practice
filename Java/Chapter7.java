@@ -48,3 +48,59 @@ a -= 3; //12
 a *= 4; //48
 a /= 2; //24
 a %= 7; //3 この3は割った余りを示している
+
+int a = 5
+boolean c;
+
+c = a < 5; //false
+c = a <= 5; //true
+c = a > 4; //true
+c = a >= 6; //false
+c = a == 5; //true
+c = a != 5; //false
+
+
+
+boolean a = true;
+boolean b = false;
+boolean c;
+
+c = a && true; // c = true
+// aとbの両方がtrueの場合にtrue
+c = a && false; // c = false
+
+c = b || true;
+// ||は、またはっていう意味
+
+c = b || false; // c = false
+
+c = !a;  // c = false
+
+c = !b; // c = true
+
+
+
+String a = "100";
+String b = "200";
+String c;
+
+c = a + b;   // c = 100200
+c = "あ" + "い"   // c = あい
+
+
+
+String a = "applePie";
+String b = "applePie";
+
+c = a == b; //c = true
+
+
+String a = "applePie";
+String b = "applePie";
+String d = "apple";
+String e = d + "Pie";
+String f = new String("applePie");
+
+c = a.equals(b); // c = true
+c = a.equals(e); // c = true
+c = a.equals(f); //c = true
