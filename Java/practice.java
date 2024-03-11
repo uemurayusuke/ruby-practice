@@ -12,3 +12,12 @@ double double1 = 1234.89d;
 
 float float1 = 0.123f;
 // fは付けないといけないといけない。
+
+boolean boolean1 = true;
+boolean boolean2 = false;
+
+char char1 = 'あ';
+// 文字を扱う型は、char型の1種類
+// 1つの変数に格納できるのは、1文字だけ
+
+参照型は、データそのものではなく、データがある参照先を保持する型です。
