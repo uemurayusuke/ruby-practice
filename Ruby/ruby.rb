@@ -341,3 +341,55 @@ while i <= 10 do
 end
 
 # i += 1は、i = i+1と同じ意味。これで、iに1ずつ足していく式にしてるわけやな。
+
+
+
+# 7章に入ります。
+puts "WEBCAMP".length
+
+puts "WEBCAMP".reverse
+
+puts "WEBCAMPでプログラミング学習".include?("WEBCAMP")
+# 文章の中で、WEBCAMPを含むかどうかやな
+
+puts "WEBCAMPでプログラミング学習".methods
+
+
+
+# 8章
+
+# def メソッド名(引数)
+#   実行する処理
+# end
+
+
+def greeting
+  'Hello'
+end
+
+puts greeting
+
+# 先に定義してputsで出力する。
+
+def greeting(name)
+  "Hello, #{name}!"
+end
+
+puts greeting('John')
+
+# greeting(name)というメソッドで定義している。
+# nameは後で指定する。
+# 指定した内容が反映される。
+
+# 戻り値とは最終結果の事。
+
+def greeting(name)
+  "Hello, #{name}!"  #この行が戻り値。
+  "Good morning, #{name}!"
+end
+
+puts greeting('John')
+
+
+
+
