@@ -311,3 +311,33 @@ for i in 1..6 do
 end
 
 # iの中身が1..6って感じがするな。
+
+
+# (範囲、ハッシュ、配列などを指定).each do |変数|
+#   実行する処理
+# end
+
+amounts = {"リンゴ"=>2, "イチゴ"=>5, "オレンジ"=>3}
+# ハッシュやな
+
+amounts.each do |fruit, amount|
+  puts "#{fruit}は#{amount}個です。"
+end
+
+# amountsに入ってる。キーと値の3セットをそれぞれ取り出す。
+# fruitとamountは任意で定義したって感じやな。
+
+
+# 繰り返し処理を中断するbreak
+
+i = 1
+while i <= 10 do
+  if i == 5
+    puts "処理を終了します"
+    break
+  end
+  puts i
+  i += 1
+end
+
+# i += 1は、i = i+1と同じ意味。これで、iに1ずつ足していく式にしてるわけやな。
