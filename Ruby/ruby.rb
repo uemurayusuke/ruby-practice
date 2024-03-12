@@ -391,5 +391,24 @@ end
 puts greeting('John')
 
 
+# 戻り値はreturnを使って明示的に指定することもできる。
+# returnを省略した場合は、先ほどのように「最終結果」が戻り値になる。
 
+def greeting(name)
+  return "Hello, #{name}!"
+  "Good morning, #{name}!"
+end
+
+# さっきは最終結果の戻り値のみを表示していたが、returnで戻り値を指定する事で、
+# 指定した結果が出力された。
+
+puts greeting('John')
+
+
+
+def calc(num)
+  return "計算できません" if num.zero?
+end
+
+# このメソッドの中身は、numが0である場合は、計算できませんと結果を返すということ。
 
